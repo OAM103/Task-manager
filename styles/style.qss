@@ -1,0 +1,205 @@
+QWidget {
+background-color: #f5f7fb;
+color: #20242c;
+font-family: "Segoe UI";
+font-size: 10pt;
+}
+
+QMainWindow,
+QDialog {
+background-color: #f5f7fb;
+color: #20242c;
+}
+
+QLineEdit,
+QTextEdit,
+QDateTimeEdit,
+QComboBox,
+QSpinBox {
+background-color: #ffffff;
+color: #20242c;
+border: 1px solid #d8dde7;
+border-radius: 8px;
+padding: 8px 10px;
+selection-background-color: #4f7cff;
+selection-color: #ffffff;
+}
+
+QLineEdit:focus,
+QTextEdit:focus,
+QDateTimeEdit:focus,
+QComboBox:focus,
+QSpinBox:focus {
+border: 1px solid #7b96ed;
+}
+
+QComboBox {
+padding-right: 28px;
+}
+
+QComboBox QAbstractItemView {
+background-color: #ffffff;
+color: #20242c;
+border: 1px solid #d8dde7;
+selection-background-color: #dfe7ff;
+selection-color: #20242c;
+}
+
+QPushButton {
+background-color: #ffffff;
+color: #20242c;
+border: 1px solid #d5dbe6;
+border-radius: 8px;
+padding: 9px 15px;
+min-height: 18px;
+}
+
+QPushButton:hover {
+background-color: #eef2f8;
+}
+
+QPushButton:pressed {
+background-color: #e3e8f0;
+}
+
+QPushButton:disabled {
+background-color: #edf0f4;
+color: #9aa2ad;
+}
+
+QListView {
+background-color: #ffffff;
+color: #20242c;
+border: 1px solid #d8dde7;
+border-radius: 10px;
+padding: 6px;
+outline: none;
+}
+
+QListView::item {
+border-radius: 8px;
+padding: 4px;
+}
+
+QListView::item:hover {
+background-color: #f1f4f9;
+}
+
+QListView::item:selected {
+background-color: #dfe7ff;
+color: #20242c;
+}
+
+QLabel {
+color: #20242c;
+}
+
+QCheckBox {
+color: #20242c;
+spacing: 8px;
+}
+
+QCheckBox::indicator {
+width: 17px;
+height: 17px;
+}
+
+QCheckBox::indicator:unchecked {
+background-color: #ffffff;
+border: 1px solid #c4cad5;
+border-radius: 4px;
+}
+
+QCheckBox::indicator:checked {
+background-color: #4f7cff;
+border: 1px solid #4f7cff;
+border-radius: 4px;
+}
+
+QGroupBox {
+background-color: #ffffff;
+color: #20242c;
+border: 1px solid #d8dde7;
+border-radius: 10px;
+margin-top: 12px;
+padding: 12px;
+}
+
+QGroupBox::title {
+subcontrol-origin: margin;
+left: 12px;
+padding: 0 6px;
+color: #596273;
+}
+
+QDialogButtonBox {
+background-color: transparent;
+}
+
+QScrollBar:vertical {
+background-color: #eef1f5;
+width: 12px;
+margin: 2px;
+}
+
+QScrollBar::handle:vertical {
+background-color: #c5ccd7;
+border-radius: 5px;
+min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+background-color: #aeb7c5;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+height: 0;
+}
+
+QScrollBar:horizontal {
+background-color: #eef1f5;
+height: 12px;
+margin: 2px;
+}
+
+QScrollBar::handle:horizontal {
+background-color: #c5ccd7;
+border-radius: 5px;
+min-width: 30px;
+}
+
+QScrollBar::handle:horizontal:hover {
+background-color: #aeb7c5;
+}
+
+QCalendarWidget {
+background-color: #ffffff;
+color: #20242c;
+}
+
+QCalendarWidget QToolButton {
+color: #20242c;
+background-color: #f1f3f7;
+border: none;
+border-radius: 5px;
+padding: 5px;
+}
+
+QCalendarWidget QToolButton:hover {
+background-color: #e5e9f0;
+}
+
+QCalendarWidget QAbstractItemView {
+background-color: #ffffff;
+color: #20242c;
+selection-background-color: #4f7cff;
+selection-color: #ffffff;
+}
+
+QToolTip {
+background-color: #ffffff;
+color: #20242c;
+border: 1px solid #cbd2dd;
+padding: 6px;
+}

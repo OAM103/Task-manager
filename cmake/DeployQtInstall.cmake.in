@@ -1,0 +1,39 @@
+if(NOT EXISTS "${CMAKE_INSTALL_PREFIX}/TaskManager.exe")
+
+    message(
+        FATAL_ERROR
+        "Установленный TaskManager.exe не найден: ${CMAKE_INSTALL_PREFIX}/TaskManager.exe"
+    )
+
+endif()
+
+message(
+    STATUS
+    "Копирование Qt-зависимостей через windeployqt..."
+)
+
+execute_process(
+    COMMAND
+        "@WINDEPLOYQT_EXECUTABLE@"
+        --release
+        --no-translations
+        --compiler-runtime
+        "${CMAKE_INSTALL_PREFIX}/TaskManager.exe"
+
+    RESULT_VARIABLE
+        WINDEPLOYQT_RESULT
+)
+
+if(NOT WINDEPLOYQT_RESULT EQUAL 0)
+
+    message(
+        FATAL_ERROR
+        "windeployqt завершился с ошибкой: ${WINDEPLOYQT_RESULT}"
+    )
+
+endif()
+
+message(
+    STATUS
+    "Qt-зависимости успешно установлены."
+)
